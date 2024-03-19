@@ -1,0 +1,12 @@
+.nav-container{
+    width: 100vw;
+    height: $footer-height;
+    background-color: $white;
+}
+// drawer
+.drawer-container{
+    padding: 0px 70px 70px;
+    .drawer-list{
+        padding: 15px;
+    }
+}

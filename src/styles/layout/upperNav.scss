@@ -1,0 +1,11 @@
+.upper-nav-container{
+    width: 100vw;
+    height: 40px;
+    background-color: $warning;
+    .content{
+        font-size: $font-size-xs;
+        .bold-content{
+        font-weight: $font-weight-bold;
+        }
+    }
+}
