@@ -4,3 +4,13 @@
 // layout
 @import "./styles/layout/upperNav.scss";
 @import "./styles/layout/navbar.scss";
+
+// internal
+@import "./styles/internal/banner.scss";
+@import "./styles/internal/dermacSection.scss";
+
+// shared
+@import "./styles/shared/button.scss";
+
+// screens
+@import "./styles/screens/homePage.scss";

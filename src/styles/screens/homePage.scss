@@ -1,0 +1,30 @@
+.stress-container{
+    width: 100%;
+    padding: 3.75rem 0;
+    background-color: $white;
+    .title-box{
+        .title{
+            font-size: $font-size-xxxl;
+            .highlighted-title{
+                color: #AD99FE;
+            }
+        }
+    }
+    .boxes-container{
+        padding: 2.5rem 0;
+        .relief-box{
+            .image-box{
+                width: 8.75rem;
+            height: 8.75rem;
+            }
+            .text{
+                font-weight: 600;
+            }
+            .sub-text{
+                font-size: $font-size-xs;
+                color: #c9c4c4;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,13 +1,14 @@
 import React from 'react'
-import Navbar from './components/layout/Navbar'
-import UpperNav from './components/layout/UpperNav'
+import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import HomePage from './components/screens/HomePage'
 
 const App = () => {
   return (
-    <>
-    <UpperNav/>
-      <Navbar/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

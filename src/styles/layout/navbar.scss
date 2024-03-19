@@ -2,11 +2,14 @@
     width: 100vw;
     height: $footer-height;
     background-color: $white;
+    position: sticky;
+    top: 2.5rem;
+    z-index: 9;
 }
 // drawer
 .drawer-container{
-    padding: 0px 70px 70px;
+    padding: 0 4.375rem 4.375rem;
     .drawer-list{
-        padding: 15px;
+        padding: 0.9375rem;
     }
 }
