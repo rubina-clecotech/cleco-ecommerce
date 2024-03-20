@@ -2,9 +2,16 @@
     width: 100%;
     padding: 3.75rem 0;
     background-color: $white;
+    @media screen and (max-width:600px) {
+        padding: 2.5rem 0;
+    }
     .title-box{
         .title{
             font-size: $font-size-xxxl;
+            @media screen and (max-width:600px) {
+                font-size: 28px;
+                font-weight: 500;
+            }
             .highlighted-title{
                 color: #AD99FE;
             }
@@ -15,7 +22,7 @@
         .relief-box{
             .image-box{
                 width: 8.75rem;
-            height: 8.75rem;
+                height: 8.75rem;
             }
             .text{
                 font-weight: 600;
@@ -24,6 +31,11 @@
                 font-size: $font-size-xs;
                 color: #c9c4c4;
                 text-align: center;
+                .line-break{
+                    @media screen and (max-width:600px) {
+                        display: none;
+                    }
+                }
             }
         }
     }
