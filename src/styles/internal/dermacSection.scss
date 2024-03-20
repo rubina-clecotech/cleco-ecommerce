@@ -1,26 +1,23 @@
 .dermac-container {
     width: 100%;
-    padding: 0 0 20px;
     background-color: $white;
-
     .image-box {
         width: 26.25rem;
         height: 28.125rem;
-        background-color: orange;
         position: relative;
         left: 3.125rem;
         z-index: 1;
 
         @media screen and (max-width:900px) {
             left: 0;
-            top: 50px;
+            top: 3.125rem;
         }
 
         @media screen and (max-width:600px) {
-            width: 300px;
-            height: 320px;
+            width: 18.75rem;
+            height: 20rem;
             left: 0;
-            top: 30px;
+            top: 1.875rem;
         }
 
         .dermac-image {
@@ -32,40 +29,40 @@
     .content-box {
         width: 31.25rem;
         height: 34.375rem;
-        background-color: #E8F180;
-        padding: 50px;
+        background-color: $light-yellow;
+        padding: 3.125rem;
         @media screen and (max-width:900px) {
-            width: 550px;
-            height: 500px;
+            width: 34.375rem;
+            height: 31.25rem;
         }
 
         @media screen and (max-width:600px) {
-            width: 350px;
-            height: 500px;
+            width: 21.875rem;
+            height: 31.25rem;
         }
 
         .inner-content-box {
             .number {
-                font-size: 40px;
+                font-size: $font-size-xxxl;
                 font-weight: 600;
             }
 
             .title {
-                font-size: 32px;
-                line-height: 34px;
-                font-weight: 500;
+                font-size: $font-size-xxl;
+                line-height: 2.125rem;
+                font-weight: $font-weight-medium;
 
                 @media screen and (max-width:900px) {
-                    font-size: 28px;
-                    line-height: 32px;
+                    font-size: 1.75rem;
+                    line-height: 2rem;
                 }
             }
 
             .sub-title {
-                font-size: 14px;
+                font-size: $font-size-sm;
 
                 @media screen and (max-width:900px) {
-                    font-size: 12px;
+                    font-size: $font-size-xs;
                 }
             }
         }

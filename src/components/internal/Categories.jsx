@@ -1,16 +1,17 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import StarIcon from "@mui/icons-material/Star";
 import acneCleanser from "../../assets/graphics/Acne Cleanser.png";
 
 const Categories = () => {
+  const matches = useMediaQuery('(max-width:600px)')
     const products =[1,2,3,4]
   return (
     <>
       <Box className="categories-container">
         <Container>
-          <Box className="title-box center-column">
+          <Box className={matches ? "title-box" :"title-box center-column"}>
             <Typography className="title">
               Routine add-ons{" "}
               <span className="highlighted-title">Products</span>
