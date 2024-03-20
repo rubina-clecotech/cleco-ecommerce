@@ -9,6 +9,8 @@ import recovery from "../../assets/graphics/SHOP RECOVERY.png";
 import mood from "../../assets/graphics/SHOP MOOD.png";
 import health from "../../assets/graphics/SKIN HEALTH.png";
 import DermacSection from "../internal/DermacSection";
+import Categories from "../internal/Categories";
+import Complexion from "../internal/Complexion";
 
 const HomePage = () => {
   return (
@@ -88,6 +90,10 @@ const HomePage = () => {
       </Box>
       {/* dermac section */}
       <DermacSection />
+      {/* categories */}
+      <Categories/>
+      {/* complexion */}
+      <Complexion/>
     </>
   );
 };
