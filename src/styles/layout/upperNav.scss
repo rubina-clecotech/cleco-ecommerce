@@ -5,8 +5,11 @@
     position: sticky;
     top: 0;
     z-index: 9;
+    .nav-list{
+        font-family: "founders grotesk";
+    }
     .content{
-        font-size: $font-size-xs;
+        font-family: "founders grotesk";
         .bold-content{
         font-weight: $font-weight-bold;
         }

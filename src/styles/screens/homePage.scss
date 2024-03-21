@@ -8,12 +8,17 @@
     .title-box{
         .title{
             font-size: $font-size-xxxl;
+            font-family: "allenoire";
             @media screen and (max-width:600px) {
                 font-size: 28px;
-                font-weight: $font-weight-medium;
             }
             .highlighted-title{
+                font-size: 94px;
+                font-family: "better yesterday";
                 color: $light-purple;
+                @media screen and (max-width:600px) {
+                    font-size: 48px;
+                }
             }
         }
     }
@@ -25,9 +30,11 @@
                 height: 8.75rem;
             }
             .text{
+                font-family: "founders grotesk";
                 font-weight: 600;
             }
             .sub-text{
+                font-family: "founders grotesk";
                 font-size: $font-size-xs;
                 color: $light-gray;
                 text-align: center;

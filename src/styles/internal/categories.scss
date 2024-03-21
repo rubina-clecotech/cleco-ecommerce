@@ -5,16 +5,19 @@
     .title-box{
         .title{
             font-size: $font-size-xxxl;
+            font-family: "allenoire";
             @media screen and (max-width:600px) {
                 font-size: 1.75rem;
                 font-weight: $font-weight-medium;
             }
             .highlighted-title{
+                font-size: 58px;
                 color: $light-purple;
+                font-family: "better yesterday";
             }
         }
         .sub-title{
-            font-size: $font-size-sm;
+            font-family: "founders grotesk";
             color: $light-gray;
         }
     }
@@ -27,6 +30,7 @@
             }
         }
         .product-rating{
+            font-family: "founders grotesk";
             font-size: $font-size-sm;
             display: flex;
             color: $light-gray;
@@ -35,10 +39,12 @@
             }
         }
         .product-title{
+            font-family: "allenoire";
             font-size: $font-size-lg;
             font-weight: $font-weight-medium;
         }
         .product-description{
+            font-family: "founders grotesk";
             font-size: $font-size-xs;
             color: $light-gray;
         }

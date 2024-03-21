@@ -14,6 +14,7 @@
         }
         .bold-text{
             font-size: 5rem;
+            font-family: "allenoire";
             line-height: 4.25rem;
             @media screen and (max-width:600px) {
                 font-size: 3.125rem;
@@ -23,6 +24,8 @@
         }
         .text{
             font-size: $font-size-md;
+            font-family: founders grotesk !important;
+            font-style: SemiboldItalic !important;
             @media screen and (max-width:600px) {
                 font-size: $font-size-sm;
             }

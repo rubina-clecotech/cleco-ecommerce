@@ -45,13 +45,14 @@
             .number {
                 font-size: $font-size-xxxl;
                 font-weight: 600;
+                font-family: "allenoire";
             }
 
             .title {
                 font-size: $font-size-xxl;
                 line-height: 2.125rem;
                 font-weight: $font-weight-medium;
-
+                font-family: "allenoire";
                 @media screen and (max-width:900px) {
                     font-size: 1.75rem;
                     line-height: 2rem;
