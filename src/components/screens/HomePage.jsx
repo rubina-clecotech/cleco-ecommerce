@@ -11,6 +11,8 @@ import health from "../../assets/graphics/SKIN HEALTH.png";
 import DermacSection from "../internal/DermacSection";
 import Categories from "../internal/Categories";
 import Complexion from "../internal/Complexion";
+import GlamBanner from "../internal/GlamBanner";
+import Footer from "../layout/Footer";
 
 const HomePage = () => {
   return (
@@ -94,6 +96,10 @@ const HomePage = () => {
       <Categories/>
       {/* complexion */}
       <Complexion/>
+      {/* glam banner */}
+      <GlamBanner/>
+      {/* footer */}
+      <Footer/>
     </>
   );
 };

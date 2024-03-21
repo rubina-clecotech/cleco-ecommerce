@@ -1,0 +1,60 @@
+.footer-container {
+    width: 100vw;
+    background-image: url("../../assets/graphics/footer_bg.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    .upper-section {
+        padding: 40px 0;
+        border-bottom: 1px solid $light-gray;
+
+        .upper-left {
+            .title {
+                font-size: 50px;
+                line-height: 45px;
+                font-weight: 500;
+                color: white;
+            }
+
+            .mini-title {
+                color: $light-gray;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+
+        .upper-middle {
+            .text {
+                color: white;
+            }
+        }
+
+        .upper-right {
+            .text {
+                color: $light-gray;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .bottom-section {
+        padding: 60px 0;
+        .title {
+            font-size: 50px;
+            font-weight: 500;
+            color: white;
+        }
+        .sub-heading{
+            color: white;
+        }
+        .sub-text{
+            font-size: 12px;
+            color: $light-gray;
+            width: 80%;
+        }
+        .footer-icon{
+            color: white;
+        }
+    }
+}
