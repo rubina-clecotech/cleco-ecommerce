@@ -25,18 +25,18 @@
                 line-height: 2.125rem;
             }
             .highlighted-text{
-                font-size: 80px;
-                line-height: 60px;
+                font-size: 5rem;
+                line-height: 3.75rem;
                 font-family: "better yesterday";
                 color: #D4C9FF;
                 @media screen and (max-width:"900px") {
-                    font-size: 60px;
+                    font-size: 3.75rem;
                 }
             }
         }
         .sub-text{
             font-family: "founders grotesk";
-            font-size: 18px;
+            font-size: $font-size-md;
             color: $white;
             @media screen and (max-width:"600px") {
                 font-size: $font-size-xs;

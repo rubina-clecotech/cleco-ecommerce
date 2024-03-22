@@ -10,17 +10,17 @@
             font-size: $font-size-xxxl;
             font-family: "allenoire";
             @media screen and (max-width:600px) {
-                font-size: 28px;
+                font-size: 1.75rem;
             }
             .highlighted-title{
-                font-size: 94px;
+                font-size: 5.875rem;
                 font-family: "better yesterday";
                 color: $light-purple;
                 position: relative;
-                top: 15px;
+                top: 0.9375rem;
                 @media screen and (max-width:600px) {
-                    font-size: 48px;
-                    top: 5px;
+                    font-size: 3rem;
+                    top: 0.3125rem;
                 }
             }
         }

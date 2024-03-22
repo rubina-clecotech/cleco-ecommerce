@@ -6,14 +6,14 @@
     background-repeat: no-repeat;
 
     .upper-section {
-        padding: 40px 0;
+        padding: 2.5rem 0;
         border-bottom: 1px solid $light-gray;
 
         .upper-left {
             .title {
                 font-family: "allenoire";
-                font-size: 50px;
-                line-height: 45px;
+                font-size: 3.125rem;
+                line-height: 2.8125rem;
                 font-weight: 500;
                 color: white;
                 .star{
@@ -24,15 +24,15 @@
             .mini-title {
                 font-family: "founders grotesk";
                 color: $light-gray;
-                font-size: 12px;
-                line-height: 20px;
+                font-size: 0.75rem;
+                line-height: 1.25rem;
             }
         }
 
         .upper-middle {
             .text {
                 font-family: "founders grotesk";
-                font-size: 18px;
+                font-size: 1.125rem;
                 color: white;
             }
         }
@@ -41,16 +41,16 @@
             .text {
                 font-family: "founders grotesk";
                 color: $light-gray;
-                font-size: 14px;
+                font-size: 0.875rem;
             }
         }
     }
 
     .bottom-section {
-        padding: 60px 0;
+        padding: 3.75rem 0;
         .title {
             font-family: "allenoire";
-            font-size: 50px;
+            font-size: 3.125rem;
             font-weight: 500;
             color: white;
             .star{
@@ -58,13 +58,13 @@
             }
         }
         .sub-heading{
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: "founders grotesk";
             color: white;
         }
         .sub-text{
             font-family: "founders grotesk";
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $light-gray;
             width: 80%;
         }
