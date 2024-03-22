@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography,Container } from "@mui/material";
 import React from "react";
 import { NavigateButton } from "../shared/Buttons";
 import skinCare from "../../assets/graphics/skinCare.png";
@@ -18,6 +18,7 @@ const GlamBanner = () => {
   return (
     <>
       <Box className="glam-container">
+        <Container>
         <Stack
           className="glam-box"
           direction={{ xs: "column", lg: "row" }}
@@ -123,6 +124,7 @@ const GlamBanner = () => {
                 </Grid>
             </Grid>
           </Box>
+        </Container>
       </Box>
     </>
   );
