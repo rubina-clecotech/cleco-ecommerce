@@ -21,7 +21,7 @@ const Footer = () => {
                   Among 120k+ customers subscribed <br /> to Glam. Self reported.
                 </Typography>
               </Stack>
-              <Typography className="title">Glowing </Typography>
+              <Typography className="title">Glowing<span className="star">*</span></Typography>
               </Box>
             </Grid>
             <Grid item xs={6} sm={3.5}>
@@ -51,7 +51,7 @@ const Footer = () => {
           <Box className="bottom-section center">
                 <Grid container spacing={3} >
                     <Grid item xs={12} sm={5} >
-                    <Typography className="title">glam</Typography>
+                    <Typography className="title">glam<span className="star">*</span></Typography>
                     </Grid>
                     <Grid item xs={6} sm={3.5}>
                         <Typography className="sub-heading">Address Line</Typography>

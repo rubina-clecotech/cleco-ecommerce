@@ -27,8 +27,7 @@ const HomePage = () => {
         <Container>
           <Box className="title-box center">
             <Typography className="title">
-              Name your stress. <span className="highlighted-title">Find</span>{" "}
-              your relief
+              Name your stress. <span className="highlighted-title mr-10">Find</span> your relief
             </Typography>
           </Box>
           <Grid container className="boxes-container center" spacing={4}>

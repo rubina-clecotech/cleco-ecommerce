@@ -11,9 +11,16 @@
                 font-weight: $font-weight-medium;
             }
             .highlighted-title{
-                font-size: 58px;
-                color: $light-purple;
                 font-family: "better yesterday";
+                font-size: 68px;
+                line-height: 58px;
+                color: $light-purple;
+                position: relative; 
+                top: 5px;   
+                @media screen and (max-width:600px) {
+                    font-size: 48px;
+                    font-weight: $font-weight-medium;
+                }          
             }
         }
         .sub-title{

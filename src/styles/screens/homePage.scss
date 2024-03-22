@@ -16,8 +16,11 @@
                 font-size: 94px;
                 font-family: "better yesterday";
                 color: $light-purple;
+                position: relative;
+                top: 15px;
                 @media screen and (max-width:600px) {
                     font-size: 48px;
+                    top: 5px;
                 }
             }
         }
