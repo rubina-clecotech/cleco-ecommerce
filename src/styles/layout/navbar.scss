@@ -5,11 +5,46 @@
     position: sticky;
     top: 2.5rem;
     z-index: 9;
+    border-bottom: 1px solid #F3F1ED;
+    .nav-link{
+        font-family: "founders grotesk";
+        font-size: 1.125rem;
+        color: #000;
+        text-decoration: none;
+    }
+    .active-link{
+        font-family: "founders grotesk";
+        font-size: 1.125rem;
+        color: #FF6227;
+        text-decoration: none;
+    }
+    .search-field{
+        font-size: 0.875rem;
+        padding: 3% 7%;
+        margin-right: 30px;
+        border: 1px solid #e2e2e2;
+        border-radius: 3.625rem !important;
+        &:focus {
+            outline: none;
+          }
+    }
 }
 // drawer
 .drawer-container{
     padding: 0 4.375rem 4.375rem;
     .drawer-list{
         padding: 0.9375rem;
+        .nav-link{
+            font-family: "founders grotesk";
+            font-size: 1.125rem;
+            color: #000;
+            text-decoration: none;
+        }
+        .active-link{
+            font-family: "founders grotesk";
+            font-size: 1.125rem;
+            color: #FF6227;
+            text-decoration: none;
+        }
     }
 }

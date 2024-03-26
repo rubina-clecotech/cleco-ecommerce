@@ -37,10 +37,14 @@
                 font-weight: 600;
             }
             .sub-text{
+                padding-inline: 1.5625rem;
                 font-family: "founders grotesk";
                 font-size: $font-size-xs;
                 color: $light-gray;
                 text-align: center;
+                @media screen and (max-width:600px) {
+                    padding-inline: 0;
+                }
                 .line-break{
                     @media screen and (max-width:600px) {
                         display: none;

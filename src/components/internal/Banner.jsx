@@ -18,7 +18,7 @@ const Banner = () => {
             </Grid>
             <Grid item xs={6}>
                 <Box className="right-section">
-                    <img src={banner} className='image' alt=''/>
+                    <img src={banner} className='image' alt='banner-img'/>
                 </Box>
             </Grid>
         </Grid>

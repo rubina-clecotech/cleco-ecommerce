@@ -5,8 +5,25 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const contactLinks = [
+    {text:"About Us",path:"#"},
+    {text:"Offers",path:"#"},
+    {text:"Products",path:"#"},
+    {text:"Why Choose Us?",path:"#"},
+    {text:"Reviews",path:"#"},
+    {text:"Contact Us",path:"#"},
+  ]
+  const links = [
+    {text:"Favorite",path:"#"},
+    {text:"Cart",path:"#"},
+    {text:"Locations",path:"#"},
+    {text:"Blogs",path:"#"},
+    {text:"Gift Vouchers",path:"#"},
+    {text:"Celebration",path:"#"},
+  ]
   return (
     <>
       <Box className="footer-container">
@@ -25,25 +42,19 @@ const Footer = () => {
               </Box>
             </Grid>
             <Grid item xs={6} sm={3.5}>
-                <Stack className="upper-middle" spacing={2}>
-                    <Typography className="text">About Us</Typography>
-                    <Typography className="text">Offers</Typography>
-                    <Typography className="text">Products</Typography>
-                    <Typography className="text">Why Choose Us?</Typography>
-                    <Typography className="text">Reviews</Typography>
-                    <Typography className="text">Contact Us</Typography>
+                <Stack className="upper-middle" spacing={1.5}>
+                    {
+                      contactLinks.map(item => (<Link to={item.path} className="text">{item.text}</Link>))
+                    }
                 </Stack>
             </Grid> 
             <Grid item xs={6} sm={3.5}>
                 <Stack className="upper-right" spacing={.5}>
-                    <Typography className="text">Favorite</Typography>
-                    <Typography className="text">Cart</Typography>
-                    <Typography className="text">Locations</Typography>
-                    <Typography className="text">Blogs</Typography>
-                    <Typography className="text">Gift Vouchers</Typography>
-                    <Typography className="text">Celebration</Typography>
-                    <Typography className="text mt-30">Privacy Policy + terms of Service</Typography>
-                    <Typography className="text">Celebration + Cookie ploicy</Typography>
+                    {
+                      links.map((item) => (<Link to={item.path} className="text">{item.text}</Link>))
+                    }
+                    <Link className="text mt-30">Privacy Policy + terms of Service <br/>
+                    Celebration + Cookie ploicy</Link>
                 </Stack>
             </Grid>
           </Grid>
@@ -57,17 +68,17 @@ const Footer = () => {
                         <Typography className="sub-heading">Address Line</Typography>
                         <Typography className="sub-text mt-18">Lorem Ipsum is simply dummy text  of the printing and typesetting industry.  Lorem Ipsum has been the industry's </Typography>
                         <Stack direction="row" spacing={2} className="mt-30">
-                            <FacebookIcon className="footer-icon"/>
-                            <TwitterIcon className="footer-icon"/>
-                            <LinkedInIcon className="footer-icon"/>
-                            <InstagramIcon className="footer-icon"/>
-                            <YouTubeIcon className="footer-icon"/>
+                            <Link to={"https://www.facebook.com"} target="_blank"><FacebookIcon className="footer-icon"/></Link>
+                            <Link to={"https://twitter.com"} target="_blank"><TwitterIcon className="footer-icon"/></Link>
+                            <Link to={"https://www.linkedin.com"} target="_blank"><LinkedInIcon className="footer-icon"/></Link>
+                            <Link to={"https://www.instagram.com"} target="_blank"><InstagramIcon className="footer-icon"/></Link>
+                            <Link to={"https://www.youtube.com"} target="_blank"><YouTubeIcon className="footer-icon"/></Link>
                         </Stack>
                     </Grid>
                     <Grid item xs={6} sm={3.5}>
                         <Typography className="sub-heading">Contact Us</Typography>
-                        <Typography className="sub-text mt-18">glowproducts@gmail</Typography>
-                        <Typography className="sub-text">+0199988877</Typography>
+                        <Link to={"https://mail.google.com/mail/?view=cm&fs=1&to=rubinashaikh@clecotech.com"} target="_blank" className="sub-text mt-18">glowproducts@gmail</Link><br/>
+                        <Link to={"tel:+1234567890"} className="sub-text">+0199988877</Link>
                     </Grid>
                 </Grid>
           </Box>

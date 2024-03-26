@@ -1,0 +1,33 @@
+.checkout-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $white;
+    padding: 0 0 20px;
+    .cart-box{
+        .heading{
+            font-family: "founders grotesk";
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .subtotal-box{
+            .pricing{
+                font-family: "founders grotesk";
+                font-weight: 600 ;
+                font-size: 18px;
+            }
+            .detail-box{
+                padding-inline: 3%;
+                .text{
+                    font-family: "Poppins", sans-serif;
+                    font-size: 14px;
+                    color: #858484;
+                }
+                .price{
+                    font-family: "Poppins", sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
