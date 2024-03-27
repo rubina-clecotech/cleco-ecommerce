@@ -1,0 +1,150 @@
+.glam-container {
+    width: 100vw;
+    padding: 5rem 0;
+    background-color: $white;
+
+    @media screen and (max-width:"900px") {
+        padding: 1.25rem 0;
+    }
+
+    .glam-box {
+        height: 100%;
+        background-image: url("../../assets/graphics/glambanner.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 3.75rem;
+
+        @media screen and (max-width:"900px") {
+            padding: 1.25rem;
+        }
+
+        .left-section {
+            width: 40%;
+            padding: 0 3.125rem;
+
+            @media screen and (max-width:"900px") {
+                width: 100%;
+                padding: 0 0;
+            }
+
+            .heading {
+                font-family: "allenoire";
+                font-size: 2.5rem;
+                line-height: 2.625rem;
+                font-weight: 600;
+                color: $white;
+            }
+
+            .sub-heading {
+                font-family: "founders grotesk";
+                font-size: 0.875rem;
+                color: $white;
+            }
+        }
+
+        .right-section {
+            width: 60%;
+
+            @media screen and (max-width:"900px") {
+                width: 100%;
+            }
+
+            .box1 {
+                width: 100%;
+                height: 100%;
+
+                .right-image {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .healthy-skin-container {
+        padding: 5rem 0 0;
+
+        @media screen and (max-width:"900px") {
+            padding: 2.5rem 1.25rem;
+        }
+
+        .text {
+            font-family: "allenoire";
+            font-size: 2.125rem;
+            font-weight: 500;
+
+            .highlighted-text {
+                font-family: "better yesterday";
+                font-size: 3.375rem;
+                color: $light-purple;
+            }
+        }
+
+        .sub-text {
+            font-family: "founders grotesk";
+            font-size: $font-size-md;
+        }
+    }
+
+    // users review
+    .user-review-container {
+        padding: 3.75rem 0;
+
+        @media screen and (max-width:"900px") {
+            padding: 2.5rem 1.25rem;
+        }
+
+        .user-images {
+            .image-box {
+                width: 5rem;
+                height: 5rem;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .review-box {
+            padding-bottom: 25px;
+            .review {
+                font-family: "founders grotesk";
+                color: $light-gray;
+            }
+
+            .reviewer {
+                font-size: $font-size-md;
+                font-weight: 600;
+            }
+        }
+        .swiper-pagination-bullet-active-main{
+            background-color: grey !important;
+        }
+    }
+
+    // logos
+    .sources-container {
+        @media screen and (max-width:"900px") {
+            padding: 1.25rem 1.25rem;
+        }
+
+        .source-box {
+            width: 100%;
+
+            .logo {
+                @media screen and (max-width:"900px") {
+                    width: 90%;
+                }
+            }
+
+            .ibm-logo {
+                @media screen and (max-width:"900px") {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+

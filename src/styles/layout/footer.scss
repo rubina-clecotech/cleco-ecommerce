@@ -1,0 +1,78 @@
+.footer-container {
+    width: 100vw;
+    background-image: url("../../assets/graphics/footer_bg.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    .upper-section {
+        padding: 2.5rem 0;
+        border-bottom: 1px solid $light-gray;
+
+        .upper-left {
+            .title {
+                font-family: "allenoire";
+                font-size: 3.125rem;
+                line-height: 2.8125rem;
+                font-weight: 500;
+                color: white;
+                .star{
+                    color: #FF6227;
+                }
+            }
+
+            .mini-title {
+                font-family: "founders grotesk";
+                color: $light-gray;
+                font-size: 0.75rem;
+                line-height: 1.25rem;
+            }
+        }
+
+        .upper-middle {
+            .text {
+                font-family: "founders grotesk";
+                font-size: 1.125rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .upper-right {
+            .text {
+                font-family: "founders grotesk";
+                color: $light-gray;
+                font-size: 0.875rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .bottom-section {
+        padding: 3.75rem 0;
+        .title {
+            font-family: "allenoire";
+            font-size: 3.125rem;
+            font-weight: 500;
+            color: white;
+            .star{
+                color: #FF6227;
+            }
+        }
+        .sub-heading{
+            font-size: 1.125rem;
+            font-family: "founders grotesk";
+            color: white;
+        }
+        .sub-text{
+            font-family: "founders grotesk";
+            font-size: 0.875rem;
+            color: $light-gray;
+            width: 80%;
+            text-decoration: none;
+        }
+        .footer-icon{
+            color: white;
+        }
+    }
+}

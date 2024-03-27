@@ -8,6 +8,7 @@ export const NavigateButton = ({styling,icon,title,url,size}) => {
         variant="contained"
         disableElevation
         startIcon={icon}
+        type="submit"
         component={Link}
         to={url}
         size={size}
@@ -16,17 +17,14 @@ export const NavigateButton = ({styling,icon,title,url,size}) => {
       </Button>
     )
 }
-
-export const ClickButton = ({onClick,styling,title}) => {
+export const ClickButton = ({styling,title}) => {
   return(
-    <Button
-    className={styling}
-    variant="contained"
-    disableElevation
-    type="submit"
-    onClick={onClick}
-  >
-    {title}
-  </Button>
-)
+      <Button
+      className={styling}
+      variant="contained"
+      disableElevation
+    >
+      {title}
+    </Button>
+  )
 }
