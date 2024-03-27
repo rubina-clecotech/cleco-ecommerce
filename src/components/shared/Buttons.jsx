@@ -17,11 +17,13 @@ export const NavigateButton = ({styling,icon,title,url,size}) => {
       </Button>
     )
 }
-export const ClickButton = ({styling,title}) => {
+export const ClickButton = ({styling,title,color,onClick}) => {
   return(
       <Button
       className={styling}
       variant="contained"
+      color={color}
+      onClick={onClick}
       disableElevation
     >
       {title}
