@@ -1,0 +1,84 @@
+.dermac-container {
+    width: 100%;
+    background-color: $white;
+    .image-box {
+        width: 26.25rem;
+        height: 28.125rem;
+        position: relative;
+        left: 3.125rem;
+        z-index: 1;
+
+        @media screen and (max-width:900px) {
+            left: 0;
+            top: 3.125rem;
+        }
+
+        @media screen and (max-width:600px) {
+            width: 18.75rem;
+            height: 20rem;
+            left: 0;
+            top: 1.875rem;
+        }
+
+        .dermac-image {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+            top: 1.25rem !important;
+        }
+        .swiper-pagination-bullet{
+            width: 20% !important;
+            height: 0.25rem !important;
+            border-radius: 0 !important;
+            background-color: $white !important;
+            transition: width 0.5s ease !important;
+        }
+        .swiper-pagination-bullet-active{ 
+            background-color: #E8F180 !important;
+        }
+    }
+
+    .content-box {
+        width: 31.25rem;
+        height: 34.375rem;
+        background-color: $light-yellow;
+        padding: 3.125rem;
+        @media screen and (max-width:900px) {
+            width: 34.375rem;
+            height: 31.25rem;
+        }
+
+        @media screen and (max-width:600px) {
+            width: 21.875rem;
+            height: 31.25rem;
+        }
+
+        .inner-content-box {
+            .number {
+                font-size: $font-size-xxxl;
+                font-weight: 600;
+                font-family: "allenoire";
+            }
+
+            .title {
+                font-size: $font-size-xxl;
+                line-height: 2.125rem;
+                font-weight: $font-weight-medium;
+                font-family: "allenoire";
+                @media screen and (max-width:900px) {
+                    font-size: 1.75rem;
+                    line-height: 2rem;
+                }
+            }
+
+            .sub-title {
+                font-size: $font-size-sm;
+
+                @media screen and (max-width:900px) {
+                    font-size: $font-size-xs;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.stress-container{
+    width: 100%;
+    padding: 3.75rem 0 5rem 0;
+    background-color: $white;
+    @media screen and (max-width:900px) {
+        padding: 2.5rem 0 ;
+    }
+    .title-box{
+        .title{
+            font-size: $font-size-xxxl;
+            font-family: "allenoire";
+            @media screen and (max-width:600px) {
+                font-size: 1.75rem;
+            }
+            .highlighted-title{
+                font-size: 5.875rem;
+                font-family: "better yesterday";
+                color: $light-purple;
+                position: relative;
+                top: 0.9375rem;
+                @media screen and (max-width:600px) {
+                    font-size: 3rem;
+                    top: 0.3125rem;
+                }
+            }
+        }
+    }
+    .boxes-container{
+        padding-top: 2.5rem ;
+        .relief-box{
+            .image-box{
+                width: 8.75rem;
+                height: 8.75rem;
+            }
+            .text{
+                font-family: "founders grotesk";
+                font-weight: 600;
+            }
+            .sub-text{
+                padding-inline: 1.5625rem;
+                font-family: "founders grotesk";
+                font-size: $font-size-xs;
+                color: $light-gray;
+                text-align: center;
+                @media screen and (max-width:600px) {
+                    padding-inline: 0;
+                }
+                .line-break{
+                    @media screen and (max-width:600px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

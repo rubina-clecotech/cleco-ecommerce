@@ -1,0 +1,22 @@
+.upper-nav-container{
+    width: 100vw;
+    height: 2.5rem;
+    background-color: $warning;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    .nav-list{
+        font-family: "founders grotesk";
+    }
+    .content{
+        font-family: "founders grotesk";
+        @media screen and (max-width : 600px) {
+            font-size: $font-size-xs;
+        }
+        .bold-content{
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        color: $black;
+        }
+    }
+}
