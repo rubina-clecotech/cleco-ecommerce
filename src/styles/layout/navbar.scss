@@ -1,0 +1,59 @@
+.nav-container{
+    width: 100vw;
+    height: $footer-height;
+    background-color: $white;
+    position: sticky;
+    top: 2.5rem;
+    z-index: 9;
+    border-bottom: 1px solid #F3F1ED;
+    .nav-logo{
+        @media screen and (max-width:600px) {
+            width: 80px;
+        }
+    }
+    .nav-link{
+        font-family: "founders grotesk";
+        font-size: $font-size-md;
+        color: $black;
+        text-decoration: none;
+    }
+    .active-link{
+        font-family: "founders grotesk";
+        font-size: $font-size-md;
+        color: $orange;
+        text-decoration: none;
+    }
+    .search-field{
+        font-size: $font-size-sm;
+        padding: 3% 7%;
+        margin-right: 1.875rem;
+        border: 1px solid #e2e2e2;
+        border-radius: 3.625rem !important;
+        &:focus {
+            outline: none;
+          }
+        @media screen and (max-width : 600px) {
+            width: 120px;
+            margin-right: 0;
+        }   
+    }
+}
+// drawer
+.drawer-container{
+    padding: 0 4.375rem 4.375rem;
+    .drawer-list{
+        padding: 0.9375rem;
+        .nav-link{
+            font-family: "founders grotesk";
+            font-size: $font-size-md;
+            color: $black;
+            text-decoration: none;
+        }
+        .active-link{
+            font-family: "founders grotesk";
+            font-size: $font-size-md;
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+}

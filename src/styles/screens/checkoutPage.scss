@@ -1,0 +1,46 @@
+.checkout-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $white;
+    padding: 0 0 1.25rem;
+    .no-cart-item{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        .image{
+            width: 50%;
+        }
+    }
+    .cart-box{
+        position: relative;
+        .heading{
+            font-family: "founders grotesk";
+            font-weight: 600;
+            font-size: $font-size-md;
+        }
+        .subtotal-box{
+            min-width: 300px;
+            position: fixed;
+            .pricing{
+                font-family: "founders grotesk";
+                font-weight: 600 ;
+                font-size: $font-size-md;
+                letter-spacing: 0.0625rem;
+            }
+            .detail-box{
+                padding-inline: 3%;
+                .text{
+                    font-family: "Poppins", sans-serif;
+                    font-size: $font-size-sm;
+                    color: #858484;
+                }
+                .price{
+                    font-family: "Poppins", sans-serif;
+                    font-size: $font-size-sm;
+                    font-weight: $font-weight-medium;
+                }
+            }
+        }
+    }
+}
