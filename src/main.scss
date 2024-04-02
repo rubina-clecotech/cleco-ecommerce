@@ -5,6 +5,7 @@
 @import "./styles/layout/upperNav.scss";
 @import "./styles/layout/navbar.scss";
 @import "./styles/layout/footer.scss";
+@import "./styles/layout/productsNav.scss";
 
 // internal
 @import "./styles/internal/banner.scss";
@@ -20,3 +21,4 @@
 // screens
 @import "./styles/screens/homePage.scss";
 @import "./styles/screens/checkoutPage.scss";
+@import "./styles/screens/productListing.scss";

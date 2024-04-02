@@ -6,7 +6,7 @@ const UpperNav = () => {
   return (
     <>
       <Box className="upper-nav-container center">
-        <Typography className='content'>Get FREE shipping on all orders over $20. <Link to="#" className='bold-content'>Shop Now</Link></Typography> 
+        <Typography className='content'>Get FREE shipping on all orders over $20. <Link to="/product-list" className='bold-content'>Shop Now</Link></Typography> 
       </Box>
     </>
   )
