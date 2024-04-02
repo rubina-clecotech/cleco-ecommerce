@@ -1,4 +1,4 @@
-import { Box, Container, Drawer, Stack, useMediaQuery } from "@mui/material";
+import { Badge, Box, Container, Drawer, Stack, useMediaQuery } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../../assets/graphics/logo.png";
 import SearchIcon from "../../assets/icons/SearchIcon";
@@ -8,9 +8,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 import NavLinks from "../internal/NavLinks";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const matches = useMediaQuery("(max-width:900px)");
+  const {cart} = useSelector((state) => state.cartItems)
   // search field
   const [searchField, setSearchField] = useState(false);
   const ShowSearchField = () => {
@@ -74,7 +76,9 @@ const Navbar = () => {
                 </Box>
               )}
               <Link to={"/checkout"}>
+              <Badge color="warning" badgeContent={cart.length}>
                 <ShoppingBag />
+                </Badge>
               </Link>
               <Link to={"#"}>
                 <Profile />
@@ -92,7 +96,7 @@ const Navbar = () => {
           <CloseIcon fontSize="small" />
         </Box>
         <Box className="drawer-container">
-          <NavLinks/>
+          <NavLinks toggleDrawer={toggleDrawer}/>
         </Box>
       </Drawer>
     </>

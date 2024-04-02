@@ -1,35 +1,17 @@
-.categories-container{
+.product-list-container{
     width: 100%;
-    padding: 3.75rem 0;
     background-color: $white;
-    .title-box{
-        .title{
-            font-size: $font-size-xxxl;
-            font-family: "allenoire";
-            @media screen and (max-width:600px) {
-                font-size: 1.75rem;
-                font-weight: $font-weight-medium;
-            }
-            .highlighted-title{
-                font-family: "better yesterday";
-                font-size: 4.25rem;
-                line-height: 3.625rem;
-                color: $light-purple;
-                position: relative; 
-                top: 0.3125rem;   
-                @media screen and (max-width:600px) {
-                    font-size: 3rem;
-                    font-weight: $font-weight-medium;
-                }          
-            }
-        }
-        .sub-title{
-            font-family: "founders grotesk";
-            color: $light-gray;
-        }
+    font-family: "founders grotesk";
+    font-size: $font-size-md;
+    .filter-heading{
+        font-family: "allenoire";
+        font-size: 1.875rem;
+        color: #2A1243;
+        text-transform: capitalize;
     }
-    .product-box{
-        padding-top: 2.5rem;
+    .product-list-box{
+        width: 100%;
+        padding: 1.25rem 0 2.5rem 0;
         .product-image{
             width: 100%;
             .image{
@@ -70,6 +52,11 @@
                 font-weight: $font-weight-normal;
                 color: $light-gray;
             }
+        }
+        .availability{
+            font-size: 12px;
+            font-weight: 600;
+            color: red;
         }
     }
 }

@@ -1,6 +1,5 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-import image from "../../assets/graphics/Acne Cleanser.png";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import { Link } from "react-router-dom";
@@ -18,15 +17,15 @@ const CartItem = ({ handleDecreaseQuantity, handleIncreaseQuantity, item }) => {
     <>
       <Box className="cart-item-container">
         <Box className="cart-item">
-          <Grid container spacing={1}>
-            <Grid item sm={3}>
+          <Grid container spacing={2}>
+            <Grid item  xs={2.5} sm={2}>
               <Box className="image-box">
                 <Link to="#">
                   <img src={item.image} alt="" className="product-image" />
                 </Link>
               </Box>
             </Grid>
-            <Grid item sm={8}>
+            <Grid item xs={7} sm={8.5}>
               <Stack className="product-detail">
                 <Typography className="heading">{item.title}</Typography>
                 <Typography className="price mt-5">
@@ -38,7 +37,7 @@ const CartItem = ({ handleDecreaseQuantity, handleIncreaseQuantity, item }) => {
                   <Typography className="availablity" color="green">In stock</Typography>
               </Stack>
             </Grid>
-            <Grid item sm={1} className="product-total">
+            <Grid item xs={2.5} sm={1.2} className="product-total">
               <Stack className="total-box" justifyContent="space-between">
                 <Typography className="total mt-5">
                   ${(item.price * item.quantity).toFixed(2)}

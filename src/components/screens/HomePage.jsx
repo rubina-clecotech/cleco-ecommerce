@@ -7,12 +7,14 @@ import Complexion from "../internal/Complexion";
 import GlamBanner from "../internal/GlamBanner";
 import Footer from "../layout/Footer";
 import { shop } from "../../constant";
+import UpperNav from "../layout/UpperNav";
+import Navbar from "../layout/Navbar";
 
 const HomePage = () => {
   return (
     <>
-      {/* <UpperNav />
-      <Navbar /> */}
+      <UpperNav />
+      <Navbar />
       <Banner />
       <Box className="stress-container">
         <Container>

@@ -20,8 +20,11 @@
             font-size: $font-size-md;
         }
         .subtotal-box{
-            min-width: 300px;
+            min-width: 18.75rem;
             position: fixed;
+            @media screen and (max-width:"900px") {
+                position: relative;
+            }
             .pricing{
                 font-family: "founders grotesk";
                 font-weight: 600 ;

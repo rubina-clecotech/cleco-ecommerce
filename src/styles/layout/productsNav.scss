@@ -1,0 +1,35 @@
+.product-nav{
+    width: 100%;
+    height: $footer-height-sm;
+    background-color: #F3F1ED;
+    position: sticky;
+    top: 7.5rem;
+    z-index: 9;
+    .title{
+        font-family: "Poppins", sans-serif;
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        @media screen and (max-width:"600px") {
+            font-size: $font-size-xs;
+        }
+    }
+    .nav-links{
+        position: relative;
+        .menu{
+            width: 12.5rem;
+            padding: 0.625rem;
+            background-color: white;
+            border: 1px solid #e2e2e2;
+            position: absolute;
+            top: 1.875rem;
+            border-radius: 0.25rem;
+            .item{
+                padding: 0.5rem;
+                color: rgb(90, 90, 90);
+            }
+        }
+    }
+}

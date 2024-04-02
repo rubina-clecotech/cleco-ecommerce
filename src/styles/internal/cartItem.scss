@@ -3,8 +3,7 @@
         padding: 1.25rem 0;
         border-bottom: 1px solid #e2e2e2;
         .image-box{
-            width: 7.5rem !important;
-            height: 7.5rem !important;
+            width: 100% !important;
             border-radius: 0.5rem;
             .product-image{
                 width: 100%;
@@ -16,10 +15,16 @@
             font-family: "allenoire";
             font-size: $font-size-md;
             font-weight: 600;
+            @media screen and (max-width:"600px") {
+                font-size: $font-size-sm;
+            }
         }
         .price{
             font-size: $font-size-base;
             font-family: "founders grotesk";
+            @media screen and (max-width:"600px") {
+                font-size: $font-size-sm;
+            }
             .bold-text{
                 font-weight: $font-weight-medium;
             }
@@ -35,6 +40,9 @@
             font-size: $font-size-md;
             letter-spacing: 0.0625rem;
             font-weight: $font-weight-bold;
+            @media screen and (max-width:"600px") {
+                font-size:$font-size-base;
+            }
         }
         .btn-box{
             background-color: #e4e3e3;
@@ -53,3 +61,4 @@
        }
     }
 }
+
