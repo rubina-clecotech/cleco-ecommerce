@@ -4,7 +4,7 @@
     background-color: $white;
 
     @media screen and (max-width:"900px") {
-        padding: 0;
+        padding: 1.25rem 0;
     }
 
     .glam-box {
@@ -30,7 +30,7 @@
 
             .heading {
                 font-family: "allenoire";
-                font-size: 2.5rem;
+                font-size: $font-size-xxxl;
                 line-height: 2.625rem;
                 font-weight: 600;
                 color: $white;
@@ -38,7 +38,7 @@
 
             .sub-heading {
                 font-family: "founders grotesk";
-                font-size: 0.875rem;
+                font-size: $font-size-sm;
                 color: $white;
             }
         }
@@ -72,7 +72,7 @@
         .text {
             font-family: "allenoire";
             font-size: 2.125rem;
-            font-weight: 500;
+            font-weight: $font-weight-medium;
 
             .highlighted-text {
                 font-family: "better yesterday";

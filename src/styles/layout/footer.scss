@@ -14,17 +14,17 @@
                 font-family: "allenoire";
                 font-size: 3.125rem;
                 line-height: 2.8125rem;
-                font-weight: 500;
-                color: white;
+                font-weight: $font-weight-medium;
+                color: $white;
                 .star{
-                    color: #FF6227;
+                    color: $orange;
                 }
             }
 
             .mini-title {
                 font-family: "founders grotesk";
                 color: $light-gray;
-                font-size: 0.75rem;
+                font-size: $font-size-xs;
                 line-height: 1.25rem;
             }
         }
@@ -32,8 +32,8 @@
         .upper-middle {
             .text {
                 font-family: "founders grotesk";
-                font-size: 1.125rem;
-                color: white;
+                font-size: $font-size-md;
+                color: $white;
                 text-decoration: none;
             }
         }
@@ -42,7 +42,7 @@
             .text {
                 font-family: "founders grotesk";
                 color: $light-gray;
-                font-size: 0.875rem;
+                font-size: $font-size-sm;
                 text-decoration: none;
             }
         }
@@ -53,26 +53,26 @@
         .title {
             font-family: "allenoire";
             font-size: 3.125rem;
-            font-weight: 500;
-            color: white;
+            font-weight: $font-weight-medium;
+            color: $white;
             .star{
-                color: #FF6227;
+                color: $orange;
             }
         }
         .sub-heading{
-            font-size: 1.125rem;
+            font-size: $font-size-md;
             font-family: "founders grotesk";
-            color: white;
+            color: $white;
         }
         .sub-text{
             font-family: "founders grotesk";
-            font-size: 0.875rem;
+            font-size: $font-size-sm;
             color: $light-gray;
             width: 80%;
             text-decoration: none;
         }
         .footer-icon{
-            color: white;
+            color: $white;
         }
     }
 }

@@ -1,6 +1,4 @@
 import React from "react";
-import UpperNav from "../layout/UpperNav";
-import Navbar from "../layout/Navbar";
 import Banner from "../internal/Banner";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import DermacSection from "../internal/DermacSection";
@@ -13,8 +11,8 @@ import { shop } from "../../constant";
 const HomePage = () => {
   return (
     <>
-      <UpperNav />
-      <Navbar />
+      {/* <UpperNav />
+      <Navbar /> */}
       <Banner />
       <Box className="stress-container">
         <Container>

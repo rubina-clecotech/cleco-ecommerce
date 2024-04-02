@@ -51,7 +51,7 @@ const Navbar = () => {
                 </Box>
               ) : null}
               <Box className="center">
-                <img src={logo} alt="logo" />
+                <Link to={"/"}><img src={logo} alt="logo" className="nav-logo"/></Link>
               </Box>
               {matches ? null : (
                 <Stack className="ml-80 center" direction="row" spacing={5}>
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </Stack>
               )}
             </Stack>
-            <Stack className="center" direction="row" spacing={2}>
+            <Stack className="center" direction="row" spacing={{sm:2,xs:0.5}}>
               {searchField ? (
                 <Box>
                   <input
@@ -73,7 +73,7 @@ const Navbar = () => {
                   <SearchIcon />
                 </Box>
               )}
-              <Link to={"#"}>
+              <Link to={"/checkout"}>
                 <ShoppingBag />
               </Link>
               <Link to={"#"}>
