@@ -1,4 +1,4 @@
-import { Badge, Box, Container, Drawer, Stack, useMediaQuery } from "@mui/material";
+import { Badge, Box,  Container, Drawer, Stack, useMediaQuery } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../../assets/graphics/logo.png";
 import SearchIcon from "../../assets/icons/SearchIcon";
@@ -6,12 +6,15 @@ import ShoppingBag from "../../assets/icons/ShoppingBag";
 import Profile from "../../assets/icons/Profile";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavLinks from "../internal/NavLinks";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { SearchProduct } from "../../features/products/ProductList";
 
 const Navbar = () => {
   const matches = useMediaQuery("(max-width:900px)");
+  const dispatch=useDispatch()
+  const navigate = useNavigate()
   const {cart} = useSelector((state) => state.cartItems)
   // search field
   const [searchField, setSearchField] = useState(false);
@@ -26,6 +29,7 @@ const Navbar = () => {
       !searchInputRef.current.contains(event.target)
     ) {
       setSearchField(false);
+      setSearchInput("")
     }
   };
   // drawer
@@ -34,6 +38,13 @@ const Navbar = () => {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+  // search
+  const [searchInput,setSearchInput] = useState("")
+  const handleSearch = (e,item) => {
+    e.preventDefault()
+    dispatch(SearchProduct(item))
+    navigate("/product-list")
+  }
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
   }, [searchInputRef]);
@@ -63,13 +74,15 @@ const Navbar = () => {
             </Stack>
             <Stack className="center" direction="row" spacing={{sm:2,xs:0.5}}>
               {searchField ? (
-                <Box>
+                <form className="center" onSubmit={(e)=>handleSearch(e,searchInput)}>
                   <input
                     ref={searchInputRef}
                     className="search-field"
                     placeholder="search"
+                    onChange={(e)=>setSearchInput(e.target.value)}
+                    value={searchInput}
                   />
-                </Box>
+                </form>
               ) : (
                 <Box onClick={ShowSearchField}>
                   <SearchIcon />

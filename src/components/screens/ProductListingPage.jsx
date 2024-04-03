@@ -17,6 +17,7 @@ import { addToCart } from "../../features/products/CartItems";
 import Footer from "../layout/Footer";
 import UpperNav from "../layout/UpperNav";
 import Navbar from "../layout/Navbar";
+import { getProduct } from "../../features/products/ProductDetail";
 
 const ProductListingPage = () => {
   const { filteredProducts } = useSelector((state) => state.productList);
@@ -24,6 +25,9 @@ const ProductListingPage = () => {
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
   };
+  const handleDetail = (item) => {
+    dispatch(getProduct(item))
+  }
   const allSameCategory = filteredProducts.every(
     (product) => product.category === filteredProducts[0].category
   );
@@ -35,14 +39,15 @@ const ProductListingPage = () => {
         <ProductsNav />
         <Container>
           <Typography className="filter-heading mt-30">
-            {allSameCategory ? filteredProducts[0].category : "All Products"}
+            {allSameCategory && filteredProducts.length > 0 ? filteredProducts[0].category : filteredProducts.length > 0 ? "All Products":null }
           </Typography>
           <Box className="product-list-box">
             <Grid container spacing={4}>
-              {filteredProducts?.map((item) => (
+              {filteredProducts.length > 0 ? 
+              filteredProducts?.map((item) => (
                 <Grid item xs={6} md={3}>
                   <Box className="product-image">
-                    <Link to={"#"}>
+                    <Link to={"/product-detail"} onClick={()=>handleDetail(item)}>
                       <img className="image" src={item.image} alt="" />
                     </Link>
                   </Box>
@@ -64,7 +69,7 @@ const ProductListingPage = () => {
                     {item.title}
                   </Typography>
                   <Typography className="product-description mt-5">
-                    {item.description}
+                    {item.description.substring(0,74)}...
                   </Typography>
                   <Stack
                     className="mt-5"
@@ -95,7 +100,11 @@ const ProductListingPage = () => {
                     </Stack>
                   )}
                 </Grid>
-              ))}
+              )):(
+                <Box className="no-product center">
+                  <Typography className="text">No product found</Typography>
+                </Box>
+              )}
             </Grid>
           </Box>
         </Container>

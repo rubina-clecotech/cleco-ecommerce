@@ -16,8 +16,14 @@ const ProductList = createSlice({
         ),
       };
     },
+    SearchProduct : (state,action) => {
+      return{
+        ...state,
+        filteredProducts:state.productList.filter((item)=>item.title.trim().toLowerCase()===action.payload.trim().toLowerCase())
+      }
+    }
   },
 });
 
-export const { filterCleanser } = ProductList.actions;
+export const { filterCleanser,SearchProduct} = ProductList.actions;
 export default ProductList.reducer;
