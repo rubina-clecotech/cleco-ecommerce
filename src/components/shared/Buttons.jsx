@@ -30,3 +30,18 @@ export const ClickButton = ({styling,title,color,onClick}) => {
     </Button>
   )
 }
+
+export const SubmitButton = ({styling,title,color,onClick}) => {
+  return(
+      <Button
+      className={styling}
+      variant="contained"
+      color={color}
+      onClick={onClick}
+      disableElevation
+      type="submit"
+    >
+      {title}
+    </Button>
+  )
+}
