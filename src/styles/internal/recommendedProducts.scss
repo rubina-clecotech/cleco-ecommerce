@@ -1,0 +1,68 @@
+.recommended-container {
+    padding: 1.875rem 0;
+    .slide-container {
+        .product-image {
+            width: auto;
+            .image {
+                height: 18.75rem;
+            }
+        }
+        .description-box{
+            width: 80%;
+            @media screen and (max-width:"900px") {
+                width: 70%;
+            }
+            .product-rating {
+                font-family: "founders grotesk";
+                font-size: $font-size-sm;
+                display: flex;
+                color: $light-gray;
+                .star-icon {
+                    color: gold;
+                }
+            }
+            .product-title {
+                font-family: "allenoire";
+                font-size: $font-size-lg;
+                font-weight: $font-weight-medium;
+                @media screen and (max-width:"600px") {
+                    font-size: $font-size-base;
+                }
+            }
+            .product-rate {
+                font-size: $font-size-md;
+                font-weight: 600;
+                color: $orange;
+                @media screen and (max-width:"600px") {
+                    font-size: $font-size-sm;
+                }
+                .mrp {
+                    font-size: $font-size-sm;
+                    font-weight: $font-weight-normal;
+                    color: $light-gray;
+                }
+            }
+        }
+    }
+    .slick-prev:before {
+        color: #2A1243 !important;
+        @media screen and (max-width:900px) {
+            margin-left: 1.875rem;
+        }
+    }
+    .slick-next:before {
+        color: #2A1243 !important;
+        @media screen and (max-width:900px) {
+            margin-left: -3.125rem;
+        }
+    }
+    .slide-container {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width:"900px") {
+            align-items: center;
+        }
+    }
+}
