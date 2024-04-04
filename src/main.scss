@@ -14,6 +14,8 @@
 @import "./styles/internal/complexion.scss";
 @import "./styles/internal/glamBanner.scss";
 @import "./styles/internal/cartItem.scss";
+@import "./styles/internal/productDescription.scss";
+@import "./styles/internal/recommendedProducts.scss";
 
 // shared
 @import "./styles/shared/button.scss";
@@ -22,3 +24,4 @@
 @import "./styles/screens/homePage.scss";
 @import "./styles/screens/checkoutPage.scss";
 @import "./styles/screens/productListing.scss";
+@import "./styles/screens/productDetail.scss";

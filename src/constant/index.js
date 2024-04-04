@@ -66,7 +66,7 @@ export const products = [
   {
     id:1,
     title:"Acne Cleanser",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     price:"149.00",
     rating:4.5,
@@ -80,7 +80,7 @@ export const products = [
   {
     id:2,
     title:"Makeup Remover",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     price:"149.00",
     rating:4.5,
@@ -94,7 +94,7 @@ export const products = [
   {
     id:3,
     title:"The Lip Balm",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     price:"149.00",
     rating:4.5,
@@ -108,7 +108,7 @@ export const products = [
   {
     id:4,
     title:"Rich Moisturiser",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     price:"149.00",
     rating:4.5,
@@ -121,7 +121,7 @@ export const products = [
   },{
     id:2,
     title:"Makeup Remover",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     price:"149.00",
     rating:4.5,
@@ -135,7 +135,7 @@ export const products = [
   {
     id:3,
     title:"The Lip Balm",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     price:"149.00",
     rating:4.5,
@@ -149,7 +149,7 @@ export const products = [
   {
     id:4,
     title:"Rich Moisturiser",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     price:"149.00",
     rating:4.5,
@@ -166,7 +166,7 @@ export const cartItems = [
   {
     id:1,
     title:"Acne Cleanser",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     qty:"100gm",
     quantity:1,
@@ -179,7 +179,7 @@ export const cartItems = [
   {
     id:2,
     title:"Makeup Remover",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     qty:"100gm",
     quantity:1,
@@ -192,7 +192,7 @@ export const cartItems = [
   {
     id:3,
     title:"The Lip Balm",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     qty:"100gm",
     quantity:1,
@@ -205,7 +205,7 @@ export const cartItems = [
   {
     id:4,
     title:"Rich Moisturiser",
-    description:"Shut down persistent pimples while being kind to your skin with Curology’s...",
+    description:"Shut down persistent pimples while being kind to your skin with Curology’s complete acne-fighting cleanser.",
     mrp:"699.00",
     qty:"100gm",
     quantity:1,
