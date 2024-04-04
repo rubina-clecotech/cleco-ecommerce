@@ -1,0 +1,61 @@
+.confirm-checkout-container{
+    width: 100%;
+    background-color: $white;
+    .confirm-details{
+        .product-image{
+            width: 100%;
+            height: 100%;
+            .image{
+                width: 100%;
+            }
+        }
+        .product-detail{
+            .title{
+                font-family: "allenoire";
+                font-size: 18px;
+                @media screen and (max-width:"600px") {
+                    font-size: 16px;
+                }
+            }
+            .qty{
+                font-family: "founders grotesk";
+                font-size: 16px;
+                @media screen and (max-width:"600px") {
+                    font-size: 16px;
+                }
+            }
+            .price{
+                font-family: "founders grotesk";
+                font-size: 16px;
+                @media screen and (max-width:"600px") {
+                    font-size: 16px;
+                }
+                .bold{
+                    font-weight: 600;
+                }
+            }
+        }
+        .subtotal-box{
+            min-width: 18.75rem;
+            .pricing{
+                font-family: "founders grotesk";
+                font-weight: 600 ;
+                font-size: $font-size-md;
+                letter-spacing: 0.0625rem;
+            }
+            .detail-box{
+                padding-inline: 3%;
+                .text{
+                    font-family: "Poppins", sans-serif;
+                    font-size: $font-size-sm;
+                    color: #858484;
+                }
+                .price{
+                    font-family: "Poppins", sans-serif;
+                    font-size: $font-size-sm;
+                    font-weight: $font-weight-medium;
+                }
+            }
+        }
+    }
+}

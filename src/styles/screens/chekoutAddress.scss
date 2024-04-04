@@ -1,0 +1,14 @@
+.checkout-address-container {
+    width: 100%;
+    background-color: $white;
+    padding-bottom: 20px;
+    .address-box {
+        width: 100%;
+        .address-form {
+            width: 50%;
+            @media screen and (max-width:"900px") {
+                width: 90%;
+            }
+        }
+    }
+}

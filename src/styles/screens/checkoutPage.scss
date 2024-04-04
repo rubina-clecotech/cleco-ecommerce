@@ -12,6 +12,12 @@
             width: 50%;
         }
     }
+    .stepper-container{
+        width: 70%;
+        @media screen and (max-width:"600px") {
+            width: 100% ;
+        }
+    }
     .cart-box{
         position: relative;
         .heading{
@@ -21,10 +27,6 @@
         }
         .subtotal-box{
             min-width: 18.75rem;
-            position: fixed;
-            @media screen and (max-width:"900px") {
-                position: relative;
-            }
             .pricing{
                 font-family: "founders grotesk";
                 font-weight: 600 ;
