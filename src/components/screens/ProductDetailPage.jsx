@@ -13,8 +13,10 @@ import {
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import { useDispatch, useSelector } from "react-redux";
-import { DecreaseQuantity, IncreaseQuantity } from "../../features/products/ProductDetail";
+import { DecreaseQuantity,IncreaseQuantity,} from "../../features/products/ProductDetail";
 import { addToCart } from "../../features/products/CartItems";
+import ProductDescription from "../internal/ProductDescription";
+import RecommendedProducts from "../internal/RecommendedProducts";
 
 const ProductDetailPage = () => {
   const { product } = useSelector((state) => state.productDetail);
@@ -26,8 +28,9 @@ const ProductDetailPage = () => {
     dispatch(DecreaseQuantity(item));
   };
   const handleCart = (item) => {
-    dispatch(addToCart(item))
-  }
+    dispatch(addToCart(item));
+  };
+  
   return (
     <>
       <Box className="product-detail-container">
@@ -82,20 +85,32 @@ const ProductDetailPage = () => {
                       alignItems="center"
                       justifyContent="space-between"
                     >
-                      <Box className="btn-box center" onClick={()=>handleIncrease(product)}>
+                      <Box
+                        className="btn-box center"
+                        onClick={() => handleIncrease(product)}
+                      >
                         <AddOutlinedIcon fontSize="small" className="icon" />
                       </Box>
-                      <Typography className="quantity center">{product.quantity}</Typography>
-                      <Box className="btn-box center" onClick={()=>handleDecrease(product)}>
+                      <Typography className="quantity center">
+                        {product.quantity}
+                      </Typography>
+                      <Box
+                        className="btn-box center"
+                        onClick={() => handleDecrease(product)}
+                      >
                         <RemoveOutlinedIcon fontSize="small" className="icon" />
                       </Box>
                     </Stack>
                     <Button
                       disabled={product?.availability <= 0}
-                      className={product?.availability <= 0?"disabled-cart-btn mt-10":"cart-btn mt-10"}
+                      className={
+                        product?.availability <= 0
+                          ? "disabled-cart-btn mt-10"
+                          : "cart-btn mt-10"
+                      }
                       variant="contained"
                       disableElevation
-                      onClick={()=>handleCart(product)}
+                      onClick={() => handleCart(product)}
                     >
                       Add to Cart
                     </Button>
@@ -103,6 +118,8 @@ const ProductDetailPage = () => {
                 </Stack>
               </Grid>
             </Grid>
+            <ProductDescription/>  
+            <RecommendedProducts/> 
           </Box>
         </Container>
       </Box>

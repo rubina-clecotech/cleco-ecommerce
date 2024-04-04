@@ -1,0 +1,55 @@
+.product-description-container {
+    .heading {
+        font-family: "founders grotesk";
+        font-size: 1.875rem;
+        margin-top: 3.125rem;
+    }
+    .content-card{
+        padding: 0.625rem 1.875rem;
+        .css-13xfq8m-MuiTabPanel-root{
+            padding: 1.25rem 0 0 !important;
+        }
+        .title{
+            font-family: "founders grotesk";
+            font-size: $font-size-lg;
+            font-weight: 600;
+            color: #001325B8;
+        }
+        .text{
+            font-family: "founders grotesk";
+            font-size: $font-size-lg;
+            font-weight: 400;
+            color: #001325B8;
+        }
+        .tab-header{
+            border-bottom:1px solid #e2e2e2 ;
+            .tabs{
+                text-transform: capitalize !important;
+                font-size: $font-size-md;
+            }
+            .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+                color: $orange;
+                text-transform: capitalize;
+            }
+            .css-1aquho2-MuiTabs-indicator {
+                background-color: $orange;
+            }
+        }
+        .tab-content1{
+            .list-container{
+                padding: 0.625rem 1.875rem;
+            }
+            .collapsible-content{
+                padding-bottom: 1.875rem;
+            }
+            .read-more-box{
+                padding: 0.625rem 0 0;
+                border-top: 1px solid #e2e2e2;
+                .read-btn{
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
