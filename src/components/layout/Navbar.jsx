@@ -1,4 +1,13 @@
-import { Badge, Box,  Container, Drawer, Stack, useMediaQuery } from "@mui/material";
+import {
+  Autocomplete,
+  Badge,
+  Box,
+  Container,
+  Drawer,
+  Stack,
+  TextField,
+  useMediaQuery,
+} from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../../assets/graphics/logo.png";
 import SearchIcon from "../../assets/icons/SearchIcon";
@@ -13,9 +22,11 @@ import { SearchProduct } from "../../features/products/ProductList";
 
 const Navbar = () => {
   const matches = useMediaQuery("(max-width:900px)");
-  const dispatch=useDispatch()
-  const navigate = useNavigate()
-  const {cart} = useSelector((state) => state.cartItems)
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { cart } = useSelector((state) => state.cartItems);
+  const { filteredProducts } = useSelector((state) => state.productList);
+
   // search field
   const [searchField, setSearchField] = useState(false);
   const ShowSearchField = () => {
@@ -29,7 +40,7 @@ const Navbar = () => {
       !searchInputRef.current.contains(event.target)
     ) {
       setSearchField(false);
-      setSearchInput("")
+      setSearchInput("");
     }
   };
   // drawer
@@ -39,12 +50,12 @@ const Navbar = () => {
     setOpen(newOpen);
   };
   // search
-  const [searchInput,setSearchInput] = useState("")
-  const handleSearch = (e,item) => {
-    e.preventDefault()
-    dispatch(SearchProduct(item))
-    navigate("/product-list")
-  }
+  const [searchInput, setSearchInput] = useState("");
+  const handleSearch = (e, item) => {
+    e.preventDefault();
+    dispatch(SearchProduct(item));
+    navigate("/product-list");
+  };
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
   }, [searchInputRef]);
@@ -64,23 +75,47 @@ const Navbar = () => {
                 </Box>
               ) : null}
               <Box className="center">
-                <Link to={"/"}><img src={logo} alt="logo" className="nav-logo"/></Link>
+                <Link to={"/"}>
+                  <img src={logo} alt="logo" className="nav-logo" />
+                </Link>
               </Box>
               {matches ? null : (
                 <Stack className="ml-80 center" direction="row" spacing={5}>
-                  <NavLinks/>
+                  <NavLinks />
                 </Stack>
               )}
             </Stack>
-            <Stack className="center" direction="row" spacing={{sm:2,xs:0.5}}>
+            <Stack
+              className="center"
+              direction="row"
+              spacing={{ sm: 2, xs: 0.5 }}
+            >
               {searchField ? (
-                <form className="center" onSubmit={(e)=>handleSearch(e,searchInput)}>
-                  <input
+                <form
+                  className="center"
+                  onSubmit={(e) => handleSearch(e, searchInput)}
+                >
+                  <Autocomplete
+                    disablePortal
                     ref={searchInputRef}
                     className="search-field"
-                    placeholder="search"
-                    onChange={(e)=>setSearchInput(e.target.value)}
-                    value={searchInput}
+                    open={searchInput.length > 0}
+                    options={filteredProducts.map(
+                      (item) =>
+                        item.title ||
+                        item.title.replace(/\s/g, "").toLowerCase() ||
+                        item.category
+                    )}
+                    renderInput={(params) => (
+                      <TextField
+                        {...params}
+                        label="Search"
+                        size="small"
+                        onChange={(e) => setSearchInput(e.target.value)}
+                        value={searchInput}
+                        color="grey"
+                      />
+                    )}
                   />
                 </form>
               ) : (
@@ -89,8 +124,8 @@ const Navbar = () => {
                 </Box>
               )}
               <Link to={"/checkout"}>
-              <Badge color="warning" badgeContent={cart.length}>
-                <ShoppingBag />
+                <Badge color="warning" badgeContent={cart.length}>
+                  <ShoppingBag />
                 </Badge>
               </Link>
               <Link to={"#"}>
@@ -109,7 +144,7 @@ const Navbar = () => {
           <CloseIcon fontSize="small" />
         </Box>
         <Box className="drawer-container">
-          <NavLinks toggleDrawer={toggleDrawer}/>
+          <NavLinks toggleDrawer={toggleDrawer} />
         </Box>
       </Drawer>
     </>

@@ -1,12 +1,12 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import { filterCleanser } from "../../features/products/ProductList";
+import { filterCategories } from "../../features/products/ProductList";
 
 const ProductsNav = () => {
   const dispatch = useDispatch();
   const handleFilter = (title) => {
-    dispatch(filterCleanser(title));
+    dispatch(filterCategories(title));
   };
   // dropdown menu
   const [open, setOpen] = useState(null);
@@ -51,7 +51,7 @@ const ProductsNav = () => {
   // list
   const list = [
     { title: "Cleanser", path: "#", text: "cleanser",open:handleOpen },
-    { title: "Lip Care", path: "#", text: "lipcare" ,open:handleOpenLipcare },
+    { title: "Lip Care", path: "#", text: "lip care" ,open:handleOpenLipcare },
     { title: "Moisturizer", path: "#", text: "moisturizer" ,open:handleOpenMoisturizer },
   ];
   return (

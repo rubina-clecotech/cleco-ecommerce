@@ -1,0 +1,15 @@
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper{
+    width: 20%;
+    .list-container{
+        width: 100% !important;
+    }
+    .unclicked-list{
+        background-color: white;
+    }
+    .clicked-list{
+        background-color: #e2e2e2;
+        &:hover{
+            background-color: #e2e2e2;
+        }
+    }
+}
